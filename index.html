@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo_movil.css">
+
+
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Mapa</title>
+
+    <link rel="stylesheet" href="ol.css" type="text/css">
+
+</head>
+
+<body>
+
+
+</script>
+
+
+    <div id="map" class="map" tabindex="0"></div>
+
+
+    <div id="topline">
+        Openlayers Full Screen
+    </div>
+    <div id="topline1"></div>
+
+
+
+    <script src="ol.js"></script>
+
+
+
+    <script>
+
+        var layers = [];
+
+
+        layers.push(new ol.layer.Tile({
+            source: new ol.source.OSM(),
+            visible: true
+        }));
+
+
+
+
+
+        var map = new ol.Map({
+            layers: layers,
+            target: 'map',
+            controls: [],
+            view: new ol.View({
+                //projection: 'EPSG:3857', //'EPSG:4326'
+                center: ol.proj.fromLonLat([-68.095, -16.52]),
+                zoom: 13,
+                maxZoom: 19
+            })
+        });
+
+
+
+
+
+
+
+    </script>
+
+    
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- Tony C. Huang 2017-09-27 -->

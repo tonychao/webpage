@@ -1,0 +1,109 @@
+
+
+
+#topline {
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    float: left;
+    position: absolute;
+    text-align: center;
+    color: #CCCCCC;
+    font-family: "Arial", "Verdana";
+    font-size: 10px;
+    line-height: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+#topline1 {
+    width: 100%;
+    height: 2px;
+    background: rgba(41, 128, 249, 0.5);
+    float: left;
+    position: absolute;
+    top: 20px;
+
+}
+
+
+
+#div1 {
+
+    /*background-color: rgba(0, 0, 0, 0);*/
+    float: left;
+    position: relative;
+
+    left: 10px;
+
+    outline: 0;
+
+    width: 265px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    height: 100%;
+
+
+}
+
+#div1::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px; */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#div1::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#div1::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    float: right;
+    position: fixed;
+    cursor: crosshair;
+}
+
+
+#logopos {
+
+
+    position: absolute;
+    top: 25px;
+    right: 5px;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+
+    z-index: 99;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+
